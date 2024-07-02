@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>01-HTML</title>
+</head>
+<body>
+    <!-- Esto es un comentario -->
+    <!--Etiquetas de Encabezado-->
+    <h1>01 - Introducción a HTML</h1>
+    <h2>Generation México</h2>
+    <!--
+    <h3>Cohorte 43</h3>
+    <h4>Instructores y Mentores</h4>
+    <h5>Participantes</h5>
+    <h6>Julio 2024</h6>
+    -->
+
+    <!-- Etiqueta de párrafo (p)-->
+    <p>Hola, me llamo Daniel y soy instructor en el programa de Generation Mx.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti adipisci quae ratione consectetur est quod similique quasi, non a animi cupiditate nisi porro doloremque officia velit totam ullam! Inventore, ex.</p>
+
+    <!-- Elemento de línea de separación -->
+    <hr>
+
+    <!-- Elemento para realizar un salto de línea -->
+    <br>
+
+    <!-- Etiquetas para formato de texto: <b></b>, <i></i>-->
+    <p>
+        <strong>Lorem ipsum</strong>, dolor sit amet consectetur adipisicing elit. Aperiam aut ut nobis laborum corporis ea rerum id asperiores doloremque, <b>recusandae vero delectus?</b> Corrupti sequi eveniet praesentium distinctio aperiam quis. <i><b>Accusamus</b></i>.
+    </p>
+
+    <!-- Etiqueta de imagen <img>, esta etiqueta solo es de apertura y debe ir acompañado de atributos que nos permitan establecer propiedades-->
+    <h2>Etiqueta de Imagen &lt;img&gt;</h2>
+    <img src="https://pbs.twimg.com/profile_images/917481867976331264/uy_YTm-i_400x400.jpg" alt="logo rosa de genmx" width="150px" height="120px">
+    
+    <br>
+
+    <img src="./assets/genmx_logo_azul.png" alt="logo azul de genmx" width="200px" height="150px">
+
+    <hr>
+
+    <!-- Etiqueta anchor (anclaje) <a></a>, nos permite crear hipervínculos desde cualquier elemento HTML vinculado a una ruta. Necesito atributos para hacerla funcionar -->
+    <h2>Etiqueta de Anclaje &lt;a&gt;&lt;/a&gt;</h2>
+    <a href="https://www.google.com/?hl=es" target="_blank">Este es un enlace</a>
+
+    <!-- Salto de línea para dividir las dos etiquetas de anclaje -->
+    <br>
+
+    <a href="https://mexico.generation.org/" target="_blank">
+        <img src="./assets/genmx_logo_azul.png" width="80px" alt="logo_azul_hipervinculo">
+    </a>
+
+    <a href="https://code.visualstudio.com/docs" target="_blank">
+        <p>Nuevo hipervínculo</p>
+    </a>
+
+    <hr>
+
+    <!--Etiquetas de lista. Podemos tener dos tipos de lista, ordenada y desordenada. Cada tipo de lista necesita items que viven dentro de ellas.
+    <ul></ul> lista desordenada (muestra viñetas sin jerarquia)
+    <ol></ol> lista ordenada (muestra viñetas con jerarquia)
+    <li></li> item de lista
+    -->
+    <h2>Etiquetas de lista </h2>
+    <ul>
+        <li>Tomates</li>
+        <li>Cebollas</li>
+        <li>Limones</li>
+    </ul>
+
+    <ol>
+        <li>Picaña</li>
+        <li>Gringa de pastor</li>
+        <li>Sincronizada</li>
+    </ol>
+
+    <ul>
+        <li>Picaña</li>
+        <li>Gringa de pastor</li>
+        <li>Sincronizada</li>
+    </ul>
+
+    <ol type="a">
+        <li>Sección A</li>
+        <li>Sección B</li>
+        <li>Sección C</li>
+    </ol>
+
+    <p>Menú de taquería</p>
+    <ol type="I">
+        <li>Tacos
+            <ul>
+                <li>
+                    <a href="https://www.comedera.com/wp-content/uploads/2017/08/tacos-al-pastor-receta.jpg" target="_blank">Pastor</a>
+                </li>
+                <li>
+                    <a href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQz65jiYC_T7uKSOAhVnD6sxq7ksf3-SohkeA&s" target="_blank">Sirloin</a>
+                </li>
+                <li>
+                    <a href="https://alabio.mx/imagenes/tacos-asada-eventos-puebla-2371.jpg" target="_blank">Asada</a>
+                </li>
+            </ul>
+        </li>
+        <li>Gringas
+            <ol>
+                <li>Pastor</li>
+                <li>Combinada</li>
+                <li>Longaniza</li>
+            </ol>
+        </li>
+        <li>Tortas</li>
+            <ul>
+                <li>Pastor con queso</li>
+            </ul>
+        <li>Especialidades</li>
+        <li>Bebidas</li>
+    </ol>
+
+    <hr>
+
+    <!--Etiquetas div y span
+    - div. Etiqueta divisora que permite contener otros elementos sin afectarlos directamente. Podemos anidar todos los divs que queramos sin problemas.
+    - span. Etiqueta divisora en línea que permite rodear parte del elemento dentro de una etiqueta. También lo podemos usar como elemento que no tiene un formato (estilo) específico
+
+    -->
+    <h2>Etiquetas div y span</h2>
+    <div>
+        <p>Primer párrafo</p>
+        <div>
+            <p>Párrafo anidado en el div del <span>div 1</span></p>
+            <p>Párrafo anidado en el div del div 2</p>
+        </div>
+    </div>
+
+    <p>Segundo párrafo</p>
+    <span>Tercer párrafo</span>
+    <span>Cuarto párrafo</span>
+    <span>Quinto párrafo</span>
+
+
+    <br><br><br><br>
+    <br><br><br><br>
+</body>
+</html>
