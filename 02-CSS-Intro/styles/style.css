@@ -1,0 +1,104 @@
+/*Estilos de CSS.*/
+body {
+    background-color: antiquewhite;
+}
+
+h1 {
+    /*Fuentes*/
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size:2.2rem;
+    font-weight: 900;
+    font-style:italic;
+}
+
+/*Agregar familia de fuente externa: Google fonts*/
+h2 {
+    color:brown;
+    font-family: "Playwrite US Modern", cursive;
+    font-size: 22px;
+}
+
+/*Sin la coma, le indico que los estilos se aplican los anchor que viven en la lista*/
+/*Con la coma, le indico que los estilos se aplican a todos los elementos que yo llamo*/
+li a {
+    color: rgb(255, 0, 195);
+    background-color:lightblue;
+}
+
+/* Clases (.) y Id (#)  */
+.sections {
+    background-color:darkslategray;
+    color:cornsilk;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.main {
+    background-color: burlywood;
+    color:darkslategrey;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#section--2 {
+    color:chocolate;
+}
+
+/* 
+Agregamos el estilo a los párrafos que viven dentro del elemento con el id="section--2".
+#section--2 p{
+    color: darkseagreen;
+} 
+*/
+
+/* Agregamos estilos únicos al párrafo que vive en el div 2, pero solo se agrega al párrafo indicado con la class="parrafo--2". */
+.parrafo--2 {
+    color: darkseagreen;
+}
+
+/* Manipulando las propiedades del fondo */
+#section--5 {
+    background-image: url('../assets/cat_developer.png');
+    background-size: 30px;
+    background-repeat: no-repeat;
+    background-position:center;
+    background-position: top;
+}
+
+/* width para definir el ancho de un elemento y height para definir el alto de un elemento */
+#cat--developer {
+    width: 100px;
+    height: 80px;
+}
+
+/* border, define el estilo de los bordes */
+/* margin y padding. Podemos definirlos de manera individual utilizando las propiedades:
+    - top: arriba
+    - bottom: abajo
+    - right: derecha
+    - left: izquierda
+*/
+.main--section6 {
+    border-style:solid;
+    border-color: brown;
+    border-width: 2px;
+    border-radius: 8px;
+}
+
+.gatuna {
+    border-style: solid;
+    border-color: blueviolet;
+    border-width: 2px;
+    border-radius: 12px;
+    width: 250px;
+    height: 100px;
+    margin-top:30px;
+    margin-bottom: 5px;
+    margin-left: 50px;
+    margin-right: 10px;
+    /* Podemos definir las medidas de cada lado, siguiente el sentido de las manecillas del reloj.
+    margin: 30px 10px 5px 50px ;
+    */
+    /* Podemos definir las medidas de arriba y abajo, y derecha e izquierda de la siguiente manera:
+    margin: 20px 10px;
+    */
+    padding: 10px 15px;
+}
