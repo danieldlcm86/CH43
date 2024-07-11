@@ -1,0 +1,83 @@
+/* Variables para mi paleta de colores y la fuente*/
+:root {
+    --bg-color: #171F26;
+    --dark-primary: #3B4E59;
+    --dark-secondary: #4C6473;
+    --light-primary: #BACBD9;
+    --light-secondary: #7693A6;
+    --font-primary: Verdana, Geneva, Tahoma, sans-serif;
+    --font-secondary: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body{
+    /*Mando a llamar la variable correspondiente al color guardado*/
+    background-color: var(--bg-color);
+    color: #BACBD9;
+    font-family: var(--font-primary);
+}
+
+.position {
+    background-color: var(--dark-secondary);
+    color: var(--light-primary);
+    width: 80px;
+    height: 80px;
+    margin: 5px;
+}
+
+#static {
+    /*Todos los elementos por default se encuentran posicionados de manera estática*/
+    position: static;
+    top: 20px;
+    right: 10px;
+}
+
+#relative {
+    position: relative;
+    top: 2000px;
+    left: 300px;
+}
+
+#fixed {
+    position: fixed;
+    top: 100px;
+    left: 350px;
+}
+
+#absolute {
+    position: absolute;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+#sticky {
+    position: sticky;
+}
+
+.display {
+    background-color: var(--light-primary);
+    color: var(--dark-primary);
+    width: 80px;
+    height: 80px;
+    margin: 3px;
+    /* Display in block, es la visualización del elemento por default
+    display: block;*/
+    /*display: inline; Ajusta la altura al contenido del elemento y los muestra en línea (una sola fila)*/
+    display: inline-block; /*Los elementos se muestran en línea pero ya no se ajustan al contenido, sino que mantienen su display block*/
+}
+
+
+/* Diseño responsivo (Responsive Design). Una aplicación web puede tomar diferentes propiedades según el tamaño del viewport, es decir, según el tamaño del dispositivo desde el cual se accede. 
+Para manipular las propiedades de todos mis elementos, utilizamos medias queries.
+*/
+
+/* Aplicando media query para hacer responsivo nuestro display none*/
+@media (max-width: 720px) {
+    .display {
+        display:block;
+        background-color: darkseagreen;
+    }
+
+    #display-none {
+        display: none;
+    }
+}
