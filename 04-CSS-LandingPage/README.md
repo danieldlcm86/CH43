@@ -3,4 +3,4 @@ Proyecto creado con HTML y CSS donde se diseña la landing page de Astros API en
 
 ## Wireframes de Figma
 Vista de Escritorio
-![Wireframe de Figma](Astros-API-LandingPage.png)
+![Wireframe de Figma](./assets/Astros-API-LandingPage.png)
