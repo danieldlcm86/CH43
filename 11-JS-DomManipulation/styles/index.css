@@ -1,0 +1,24 @@
+body {
+    background-color: #0C141E;
+    color:aliceblue;
+    font-family: 'Karla', sans-serif;
+}
+
+#button--card {
+    background-color: coral;
+    border: none;
+    color: darkslateblue;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    margin: 10px 0px;
+}
+
+#button--card:hover {
+    background-color: darkslateblue;
+    color: coral;
+    transition: 0.5s;
+    border: solid 1px coral;
+}
