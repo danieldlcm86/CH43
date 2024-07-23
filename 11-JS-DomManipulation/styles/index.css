@@ -22,3 +22,39 @@ body {
     transition: 0.5s;
     border: solid 1px coral;
 }
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.main input {
+    height: 25px;
+    padding: 5px;
+
+}
+
+#button--main {
+    padding: 10px 30px;
+    margin-top: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+}
+
+.profile {
+    background-color: blueviolet;
+    border-radius: 5px;
+    border: solid 1px coral;
+    text-align: center;
+    padding: 20px;
+    width: 250px;
+    margin: 20px 0px;
+}
+
+#name, #e-mail, #age, #films {
+    margin: 0px;
+}
