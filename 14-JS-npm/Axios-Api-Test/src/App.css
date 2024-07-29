@@ -1,0 +1,21 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.card {
+  padding: 2em;
+}
+
+.box {
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 5px;
+  font-family: sans-serif;
+  text-align: center;
+  line-height: 1;
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  padding: 20px 40px;
+}
