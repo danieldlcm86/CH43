@@ -1,0 +1,14 @@
+.card--container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.product--card {
+    border: solid 3px blueviolet;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 16px;
+    text-align: center;
+    max-width: 300px;
+}

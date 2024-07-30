@@ -1,0 +1,63 @@
+.navbar--container {
+    background: linear-gradient(225deg, #FF3CAC 0%, #784BA0 50%, #2B86C5 100%);
+    padding: 20px 10px;
+    position: sticky;
+    top: 0;
+    display: flex;
+    /* flex-direction: row; Es por default después de aplicar flexbox*/
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar--logo img {
+    width: 86px;
+}
+
+.navbar--menu {
+    display: flex;
+    gap: 35px;
+    font-family: "Nerko One", cursive;
+    font-size: x-large;
+}
+
+.navbar--menu a{
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.navbar--menu a:hover {
+    color: #B4DDED;
+    transition: 0.3s;
+}
+
+.navbar--search {
+    display: flex;
+    gap: 15px;
+}
+
+.navbar--search input {
+    font-family: "Gilda Display", serif;
+    font-size: small;
+    padding: 1px 5px;
+    width: 180px;
+}
+/* 
+.navbar--search button {
+    border: #8A2BE2 solid 2px;
+    background-color: #F5F5F5;
+    border-radius: 6px;
+    padding: 5px 18px;
+    cursor:pointer;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.navbar--search button:hover {
+    border: #F5F5F5 solid 2px;
+    background-color: #8A2BE2;
+    color: #F5F5F5;
+    border-radius: 6px;
+    padding: 5px 18px;
+    cursor:pointer;
+    transition: 1.2s;
+} */
