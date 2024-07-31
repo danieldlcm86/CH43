@@ -3,6 +3,7 @@ import NavBar from './components/NavBar/NavBar'
 import Button from './components/Button/Button'
 import Products from './components/Products/Products'
 import Footer from './components/Footer/Footer';
+import BasicCard from './components/Card/BasicCard';
 
 /* Con los fragmentos, le digo a React que puede recibir múltiples nodos hijos */
 function App() {
@@ -44,9 +45,13 @@ function App() {
 
       <hr />
       <h2 style={{ color: '#fff176', fontSize: 25 }}>Material UI - Components</h2>
+      
       {/* Ejemplo de MUI */}
+      <div style={{ display: 'flex', justifyContent: 'center' }}>
+      <BasicCard />
+      </div>
 
-      <br />
+      {/* <br /> */}
 
       {/* Footer */}
       <Footer />

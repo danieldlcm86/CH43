@@ -5,6 +5,7 @@
 import './NavBar.css'
 import logoNasa from '../../assets/NASA_logo.png'
 import Button from '../Button/Button'
+import { Link } from 'react-router-dom'
 
 const NavBar = () => {
     
@@ -12,10 +13,15 @@ const NavBar = () => {
         <>
         <nav className="navbar--container">
             <div className="navbar--logo">
-                <img src={logoNasa} alt="logo nasa" />
+                {/* Utilizamos Link para enlazar a otra parte de mi proyecto */}
+                <Link to={'/'}>
+                    <img src={logoNasa} alt="logo nasa" />
+                </Link>
             </div>
             <div className="navbar--menu">
-                <a href="http://open-notify.org/Open-Notify-API/People-In-Space/" target="_blank">Astros</a>
+                <Link to={'/astros-api'}>
+                    <a>Astros</a>
+                </Link>
                 <a href="https://www.nasa.gov/" target="_blank">Nasa</a>
                 <a href="https://www.estacionespacial.com/" target="_blank">ISS</a>
             </div>
