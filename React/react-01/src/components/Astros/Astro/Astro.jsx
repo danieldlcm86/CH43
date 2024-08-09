@@ -6,6 +6,7 @@ const Astro = ({ name, craft }) => {
         <div className="astro--container">
             <h3>{ name }</h3>
             <p>{ craft }</p>
+
         </div>
         </>
     )
